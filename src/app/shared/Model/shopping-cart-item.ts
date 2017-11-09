@@ -1,0 +1,17 @@
+import { Product } from './product';
+export class  ShoppingCartItem{
+    title: string;
+    imageUrl : string;
+    price:number;
+    $key :string;
+    quantity :number;
+
+    constructor(init? : Partial<ShoppingCartItem>){
+        Object.assign(this, init);
+    }
+
+    get totalPrice(){
+        let total =  this.quantity * this.price;
+        return total;
+    }
+}

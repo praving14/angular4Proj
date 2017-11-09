@@ -1,0 +1,12 @@
+
+.category-name{
+    cursor: pointer;
+}
+
+.category-name:hover{
+    background-color: #eee;
+}
+
+.sticky-top{
+    top:80px;
+}
